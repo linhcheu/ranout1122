@@ -1,0 +1,351 @@
+<style>
+
+    .sliderCont {
+
+      align-items: center;
+
+      background: #E3E3E3;
+
+      display: flex;
+
+      height: 100px;
+
+      justify-content: center;
+
+    }
+
+    @-webkit-keyframes scroll {
+
+      0% {
+
+        transform: translateX(0);
+
+      }
+
+      100% {
+
+        transform: translateX(calc(-250px * 7));
+
+      }
+
+    }
+
+    @keyframes scroll {
+
+      0% {
+
+        transform: translateX(0);
+
+      }
+
+      100% {
+
+        transform: translateX(calc(-250px * 7));
+
+      }
+
+    }
+
+    .slider {
+
+      background: white;
+
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+
+      height: 100px;
+
+      margin: auto;
+
+      overflow: hidden;
+
+      position: relative;
+
+      width: 960px;
+
+    }
+
+    .slider::before,
+
+    .slider::after {
+
+      content: "";
+
+      height: 100px;
+
+      position: absolute;
+
+      width: 200px;
+
+      z-index: 2;
+
+    }
+
+    .slider::after {
+
+      right: 0;
+
+      top: 0;
+
+      transform: rotateZ(180deg);
+
+    }
+
+    .slider::before {
+
+      left: 0;
+
+      top: 0;
+
+    }
+
+    .slider .slide-track {
+
+      -webkit-animation: scroll 30s linear infinite;
+
+      animation: scroll 30s linear infinite;
+
+      display: flex;
+
+      width: calc(250px * 14);
+
+    }
+
+    .slider .slide {
+
+      height: 100px;
+
+      width: 250px;
+
+    }
+
+</style>
+<div class="sliderCont">
+
+    <div class="slider">
+
+      <div class="slide-track">
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" width="250" />
+
+        </div>
+
+        <div class="slide">
+
+          <img alt="" height="100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" width="250" />
+
+        </div>
+
+      </div>
+
+     </div>
+       
+         </div>
+         
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFOESPORTS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(
+                to right,
+                #FFC0CB 0%,
+                #FFC0CB 50%,
+                #AFEEEE 50%,
+                #AFEEEE 100%
+            );
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #222;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #222;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to UFOESPORTS </h1>
+        <img src="https://i.ibb.co/3SyhyV3/20240731-214139.jpg" alt="UFOESPORTS" class="logo">
+        <h2>TEAM</h2>
+        <p>UFOESPORTS: Elevating Competitive Gaming to New Heights</p>
+        <p>Welcome to UFOESPORTS, where we take competitive gaming to an unparalleled level of excellence. As a premier esports organization, we are dedicated to fostering talent, building a vibrant community, and pushing the boundaries of what's possible in competitive gaming.</p>
+    </div>
+</body>
+</html>
+      <p>
+        <h1> <h1 class="title"> UFOESPORTS: Elevating Competitive Gaming to New Heights </h1>
+        <h2>Welcome to UFOESPORTS, where we take competitive gaming to an unparalleled level of excellence. As a premier esports organization, we are dedicated to fostering talent, building a vibrant community, and showcasing the thrill of competitive gaming.</h2> <p>
+        <h1> </h1 class="title"> OUR Vision </h1>
+        <p>At UFOESPORTS, our vision is to become a global leader in the esports industry. We strive to create a platform where gamers can excel, fans can engage, and the esports community can thrive. Our mission is to elevate the standards of competitive gaming and inspire the next generation of esports athletes.</p>
+        <h2> </h2 class="title"> Our Teams </h2>
+   <p>We boast a diverse roster of top-tier teams competing in various popular titles. From first-person shooters to strategy games, our teams are comprised of highly skilled players who have demonstrated exceptional talent and dedication. Our commitment to excellence is reflected in their performance, bringing home numerous championships and accolades.</p>
+  <h3> </h3 class="titles"> Community Engagement </h3>
+   <p> We believe that the heart of esports lies in its community. UFOESPORTS is dedicated to engaging with fans through live events, online interactions, and social media. We host regular tournaments, fan meet-ups, and charity events to connect with our supporters and give back to the community that has been instrumental in our success.</p>
+   <h4> </h4 class="titles" > Training and Development </h4> 
+   <p> UFOESPORTS is committed to the growth and development of our players. We provide state-of-the-art training facilities, access to professional coaching, and a supportive environment to ensure our athletes reach their full potential. Our holistic approach focuses on physical and mental well-being, ensuring our players are prepared for the rigors of competitive gaming.</p>
+   <h5> </h5 class="titles" > Join the UFOESPORTS Family </h5> 
+   <p> Whether you are a player aspiring to go pro, a fan eager to support your favorite team, or a brand looking to partner with an industry leader, UFOESPORTS welcomes you. Together, we can continue to push the boundaries of what is possible in the world of esports.
+   Stay connected with us on our social media channels for the latest news, updates, and exclusive content. Join the UFOESPORTS family today and be a part of the future of competitive gaming.</p>
+   THANK YOU FROM UFOESPORTS 
+   <body>
+   <html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFOESPORTS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(
+                to right,
+                #FFC0CB 0%,
+                #FFC0CB 50%,
+                #AFEEEE 50%,
+                #AFEEEE 100%
+            );
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #222;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #222;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>THANK YOU</h1>
+  @copyright by ranout 2024
